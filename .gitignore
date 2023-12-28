@@ -1,4 +1,5 @@
 venv/
+projects/
 
 pbot/www/node_modules
 pbot/www/.DS_Store
