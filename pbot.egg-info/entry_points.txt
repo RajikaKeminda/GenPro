@@ -1,0 +1,2 @@
+[console_scripts]
+pbot = pbot.commands:cli
