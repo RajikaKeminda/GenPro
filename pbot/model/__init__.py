@@ -16,4 +16,26 @@ def get_file_structure(path):
                 # print('{}{}'.format(subindent, f))
                 tree_str = tree_str + '{}{}\n'.format(subindent, f)
 
-        return tree_str 
+        return tree_str
+
+
+def get_file_contents(path):
+        model = []
+
+        for root, dirs, files in os.walk(path):
+            if re.search("node_modules", root): continue
+            if re.search("src", root): 
+                print(root, os.path.basename(root), os.path.dirname(root))
+                for f in files:
+                    code = ""
+                    with open(f"{root}/{f}", "r") as file:
+                        code = file.read()
+
+                    model.append({                    
+                        "dir": os.path.basename(os.path.dirname(root)),
+                        "path": f"{os.path.basename(os.path.dirname(root))}/{os.path.basename(root)}",
+                        "file": f,
+                        "content" : code
+                    })
+
+        return model      
