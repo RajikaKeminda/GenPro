@@ -37,4 +37,24 @@ def get_file_contents(path):
                         "content" : code
                     })
 
-        return model      
+        return model
+
+
+def write_code(path, code):
+        
+        actual_path = None
+        for root, dirs, files in os.walk(os.getcwd()):
+            if re.search("node_modules", root): continue
+            if re.search("src", root):
+                for f in files:
+                     abs_path = f"{root}/{f}"
+                     if re.search(path, abs_path):
+                          actual_path = abs_path
+                          break
+        
+        if actual_path is None:
+             raise "Cannot find file path"
+        
+
+        with open(actual_path, "w") as file:
+            file.write(code)

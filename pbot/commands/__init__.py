@@ -1,7 +1,7 @@
 import os
 import click
 import subprocess
-from ..model.prompt import prompt
+from ..model.prompt import prompt, change_prompt
 
 
 @click.group()
@@ -24,5 +24,12 @@ def ask(msg):
     prompt(msg)
 
 
+@click.command()
+@click.argument('msg')
+def change(msg):
+    change_prompt(msg)
+
+
 cli.add_command(start)
 cli.add_command(ask)
+cli.add_command(change)
