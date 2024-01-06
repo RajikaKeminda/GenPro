@@ -19,8 +19,10 @@ def start():
 
 
 @click.command()
-def ask():
-    prompt("")
+@click.argument('msg')
+def ask(msg):
+    prompt(msg)
+
 
 cli.add_command(start)
 cli.add_command(ask)
