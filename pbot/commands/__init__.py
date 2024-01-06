@@ -1,6 +1,7 @@
 import os
 import click
 import subprocess
+from ..model.prompt import prompt
 
 
 @click.group()
@@ -17,4 +18,9 @@ def start():
     subprocess.run(['yarn', 'start'], check=True)
 
 
+@click.command()
+def ask():
+    prompt("")
+
 cli.add_command(start)
+cli.add_command(ask)

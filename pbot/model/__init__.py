@@ -1,17 +1,13 @@
-import unittest
 import os
 import re
 
-
-class TestStructure(unittest.TestCase):
-    def test_structure(self):
-        startpath = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'www')
+def get_file_structure(path):
         
         tree_str = """"""
 
-        for root, dirs, files in os.walk(startpath):
+        for root, dirs, files in os.walk(path):
             if re.search("node_modules", root): continue
-            level = root.replace(startpath, '').count(os.sep)
+            level = root.replace(path, '').count(os.sep)
             indent = ' ' * 4 * (level)
             # print('{}{}/'.format(indent, os.path.basename(root)))
             tree_str = tree_str + '{}{}/\n'.format(indent, os.path.basename(root))
@@ -20,5 +16,4 @@ class TestStructure(unittest.TestCase):
                 # print('{}{}'.format(subindent, f))
                 tree_str = tree_str + '{}{}\n'.format(subindent, f)
 
-        return tree_str
-    
+        return tree_str 
