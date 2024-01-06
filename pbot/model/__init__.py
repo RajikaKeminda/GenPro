@@ -25,7 +25,6 @@ def get_file_contents(path):
         for root, dirs, files in os.walk(path):
             if re.search("node_modules", root): continue
             if re.search("src", root): 
-                print(root, os.path.basename(root), os.path.dirname(root))
                 for f in files:
                     code = ""
                     with open(f"{root}/{f}", "r") as file:
