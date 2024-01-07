@@ -98,7 +98,6 @@ def create_prompt(message):
         r = completion.choices[0].message.content
         
         try:
-            print(r)
             data = json.loads(r)
             dir = data["dir"]
             file_name = data["file_name"]
