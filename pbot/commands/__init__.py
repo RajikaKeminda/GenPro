@@ -31,7 +31,7 @@ def create(msg):
 @click.command()
 @click.argument('msg')
 def set_key(msg):
-    env_path = f"{os.path.dirname(os.path.dirname(os.path.dirname(__file__)))}/.env"
+    env_path = f"{os.path.dirname(os.path.dirname(__file__))}/.env"
     with open(env_path, "w+") as file:
         file.write(f"OPENAI_API_KEY={msg}")
 
