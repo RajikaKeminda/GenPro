@@ -1,5 +1,7 @@
 venv/
 projects/
+build/
+dist/
 
 .env
 pbot/www/node_modules

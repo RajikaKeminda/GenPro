@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pbot',
+    name='genpro',
     version='0.1.0',
     author="Rajika Keminda",
     author_email="rkeminda0@gmail.com",
@@ -13,7 +13,7 @@ setup(
     keywords=["cli", "AI", "python", "project manager"],
     entry_points={
         'console_scripts': [
-            'pbot = pbot.commands:cli',
+            'gp = genpro.commands:cli',
         ],
     },
 )
