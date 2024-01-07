@@ -4,7 +4,7 @@
 GenPro is a simple CLI developed using python and generative AI model (gpt-3.5-turbo-16k).
 
 ### What you can do with GenPro:
-1. You can ask anything about your project.
+1. You can ask anything about your project and get rich data visualization in console.
 2. You can analyze and optimize codes.
 3. You can easily create files with generated contents.
 4. You can modify existing file contents.
@@ -15,6 +15,15 @@ GenPro is a simple CLI developed using python and generative AI model (gpt-3.5-t
 Creating and modifying components.
 
 https://github.com/RajikaKeminda/GenPro/assets/41231001/bc4fd5c1-36a9-4800-9e63-11776ad59fa4
+
+
+https://github.com/RajikaKeminda/GenPro/assets/41231001/057e6647-2914-42b2-a21e-4833a4d4a0ab
+
+
+Ask for an explanation.
+
+https://github.com/RajikaKeminda/GenPro/assets/41231001/726f0d7a-1c5f-49b0-a17d-05016c4e5d06
+
 
 ### Installation
 ```
