@@ -1,7 +1,7 @@
 # GenPro
 
 ## Generative AI for professional project management.
-GenPro is a simple CLI developed using python and generative AI model(gpt-3.5-turbo-16k).
+GenPro is a simple CLI developed using python and generative AI model (gpt-3.5-turbo-16k).
 
 ### What you can do with GenPro:
 1. You can ask anything about your project.
