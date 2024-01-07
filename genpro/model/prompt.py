@@ -40,7 +40,7 @@ def change_prompt(message):
     client = OpenAI(api_key=API_KEY)
     console = Console()
 
-    with console.status("Waite...") as status:
+    with console.status("Working on...") as status:
         struct_str = get_file_structure(os.getcwd())
         content = get_file_contents(os.getcwd())
 
@@ -77,7 +77,7 @@ def create_prompt(message):
     client = OpenAI(api_key=API_KEY)
     console = Console()
 
-    with console.status("Waite...") as status:
+    with console.status("Working on...") as status:
         struct_str = get_file_structure(os.getcwd())
         content = get_file_contents(os.getcwd())
 
