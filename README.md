@@ -12,7 +12,8 @@ GenPro is a simple CLI developed using python and generative AI model (gpt-3.5-t
 
 ### Short videos:
 
-Creating and modifying components
+Creating and modifying components.
+
 https://github.com/RajikaKeminda/GenPro/assets/41231001/bc4fd5c1-36a9-4800-9e63-11776ad59fa4
 
 ### Installation
