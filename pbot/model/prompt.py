@@ -17,7 +17,7 @@ def prompt(message):
         content = get_file_contents(os.getcwd())
 
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-16k",
             messages=[
                     {"role": "system", "content": "you are a project analyzer and code reviewer. I give you a full structure of project and file contents. you need to identify the project and answer my questions using given dataset."},
                     {"role": "system", "content": f"""
@@ -43,7 +43,7 @@ def change_prompt(message):
         content = get_file_contents(os.getcwd())
 
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-16k",
             messages=[
                     {"role": "system", "content": "you are a project analyzer, code reviewer, code optimizer and code writer. I give you a full structure of project and file contents. you need to identify the project and modify the codes according to my expressions using given dataset. i directly use your response to change the file content. so you have to give response using specific format that i gives to you. dont use any additional text to the response."},
                     {"role": "system", "content": f"""
