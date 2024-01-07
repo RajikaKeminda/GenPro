@@ -14,6 +14,7 @@ setup(
     entry_points={
         'console_scripts': [
             'gp = genpro.commands:cli',
+            'gen = genpro.commands:cli'
         ],
     },
 )

@@ -1,2 +1,3 @@
 [console_scripts]
+gen = genpro.commands:cli
 gp = genpro.commands:cli
