@@ -40,6 +40,7 @@ or
 ```
 
 ## Commands
+``Note: Use these commands in your project directory``
 
 Ask about your project
 ```
