@@ -1,6 +1,7 @@
 venv/
 projects/
 
+.env
 pbot/www/node_modules
 pbot/www/.DS_Store
 pbot/www/npm-debug.log*

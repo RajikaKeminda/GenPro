@@ -7,9 +7,10 @@ from rich.console import Console
 
 from . import get_file_structure, get_file_contents, write_code, create_file
 
-client = OpenAI(api_key="")
+API_KEY=os.environ.get("OPENAI_API_KEY")
 
 def prompt(message):
+    client = OpenAI(api_key=API_KEY)
     console = Console()
 
     with console.status("Analyzing...") as status:
@@ -36,6 +37,7 @@ def prompt(message):
     
 
 def change_prompt(message):
+    client = OpenAI(api_key=API_KEY)
     console = Console()
 
     with console.status("Waite...") as status:
@@ -72,6 +74,7 @@ def change_prompt(message):
 
 
 def create_prompt(message):
+    client = OpenAI(api_key=API_KEY)
     console = Console()
 
     with console.status("Waite...") as status:
