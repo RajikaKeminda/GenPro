@@ -10,7 +10,7 @@ GenPro is a simple CLI developed using python and generative AI model (gpt-3.5-t
 4. You can modify existing file contents.
 5. You can do whatever you want with your creativity.
 
-### Short videos:
+## Short videos:
 
 Creating and modifying components.
 
@@ -25,12 +25,12 @@ Ask for an explanation.
 https://github.com/RajikaKeminda/GenPro/assets/41231001/726f0d7a-1c5f-49b0-a17d-05016c4e5d06
 
 
-### Installation
+## Installation
 ```
   pip install genpro
 ```
 
-### Configuration
+## Configuration
 ```
   gen set-key OPENAI_API_KEY
 ```
@@ -39,7 +39,7 @@ or
   gp set-key OPENAI_API_KEY
 ```
 
-### Commands
+## Commands
 
 Ask about your project
 ```
@@ -55,3 +55,6 @@ Modify files
 ```
   gen change "Remove current main page content and place Hello world in middle of the screen. use tailwind css. hint: App.tsx"
 ```
+
+## Tested OS
+macOS 14 Sonoma, Ubuntu
