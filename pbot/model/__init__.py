@@ -26,6 +26,7 @@ def get_file_contents(path):
             if re.search("node_modules", root): continue
             if re.search("src", root): 
                 for f in files:
+                    if re.search(".svg", f): continue
                     code = ""
                     with open(f"{root}/{f}", "r") as file:
                         code = file.read()
@@ -57,4 +58,20 @@ def write_code(path, code):
         
 
         with open(actual_path, "w") as file:
+            file.write(code)
+
+
+def create_file(dir, file_name, code):
+        
+        actual_path = None
+        for root, dirs, files in os.walk(os.getcwd()):
+            if re.search("node_modules", root): continue
+            if re.search("src", root):
+                if re.search(dir, root):
+                    actual_path = f"{root}/{file_name}"
+        
+        if actual_path is None:
+             raise "Cannot find file path"
+      
+        with open(actual_path, "w+") as file:
             file.write(code)
